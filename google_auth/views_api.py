@@ -29,7 +29,7 @@ def google_login_api(request):
         "response_type=code"
         f"&client_id={GOOGLE_CLIENT_ID}"
         f"&redirect_uri={GOOGLE_REDIRECT_URI}"
-        "&scope=openid email profile https://www.googleapis.com/auth/userinfo.email "
+        "scope=openid email profile https://www.googleapis.com/auth/userinfo.email "
         "https://www.googleapis.com/auth/userinfo.profile"
         "&access_type=offline"
         "&prompt=consent"
