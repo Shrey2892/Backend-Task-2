@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-1wtqywv1de(0tuv(_8)zxrt#!4nxbi5f98xpo^e%x^-#-4_63#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["backend-task-gkx8.onrender.com","backend-task-x880.onrender.com","backend-task-production-558a.up.railway.app","localhost","127.0.0.1"]
+ALLOWED_HOSTS = ["backend-task-gkx8.onrender.com","backend-task-x880.onrender.com","backend-task-production-558a.up.railway.app","localhost","127.0.0.1","127.0.0.1:51216"]
 
 
 # Add these at the top of your settings.py
