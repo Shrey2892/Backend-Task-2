@@ -50,6 +50,7 @@ DATABASES = {
 
 INSTALLED_APPS = [
     'daphne',
+    'channels',
     'corsheaders',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -150,15 +151,20 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 ASGI_APPLICATION = 'Project.asgi.application'
 
 
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "channels.layers.InMemoryChannelLayer",
+    },
+}
 
 
 
 #CHANNEL_LAYERS = {
     #"default": {
-      #  "BACKEND": "channels_redis.core.RedisChannelLayer",
-       # "CONFIG": {
-          #  "hosts": [os.getenv("REDIS_URL")],  # Fetching from Render environment
-        #},
+       # "BACKEND": "channels_redis.core.RedisChannelLayer",
+        #"CONFIG": {
+        #    "hosts": [os.getenv("REDIS_URL")],  # Fetching from Render environment
+       # },
     #},
 #}
 
